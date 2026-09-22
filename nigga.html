@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>cruds</title>
+        
+        <link rel="stylesheet" href="nigga.css">
+    </head>
+    
+    <body>
+<button id="up">↑</button>
+
+    <div id="crud">
+        <div id="head">
+            <h2>crud</h2>
+            <p>product management system</p>
+        </div>
+
+
+        <div id="inputs">
+            <input type="text" id="title" placeholder="title">
+            <div id="prices">
+                <input onkeyup="getTotal()" type="number" id="price" placeholder="price">
+                <input onkeyup="getTotal()" type="number" id="discount" placeholder="discount">
+                <small id="total"></small>
+            </div>
+            <input type="number" id="count" placeholder="count">
+                <input type="text" id="category" placeholder="category">
+                <button id="submit">Create</button>
+
+        </div>
+
+
+        <div id="outputs">
+            <div id="searchblock">
+                <input onkeyup="searchdata(this.value)" type="text" id="search" placeholder="search">
+                <div id="btnsearch">
+                    <button onclick="getsearchmood(this.id)" id="searchTitle">Search By Title</button>
+                    <button onclick="getsearchmood(this.id)" id="searchTCategory">Search By Category</button>
+                </div>
+            </div>
+        </div>
+
+         <div id="deleteall"></div>
+        <table>
+            <tr>
+                <th>id</th>
+                <th>title</th>
+                <th>price</th>
+                <th>time</th>
+                <th>discount</th>
+                <th>category</th>
+                <th>total</th>
+                <th>update</th>
+                <th>delete</th>
+            </tr>
+
+            <tbody id="tbody">
+
+                
+            </tbody>
+        </table>
+
+    </div>
+
+
+
+    <script src="nigga.js"></script>
+</body>
+</html>
